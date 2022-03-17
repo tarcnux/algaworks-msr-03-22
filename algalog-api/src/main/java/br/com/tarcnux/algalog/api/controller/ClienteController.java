@@ -1,4 +1,4 @@
-package br.com.tarcnux.algalog.controller;
+package br.com.tarcnux.algalog.api.controller;
 
 import java.util.List;
 

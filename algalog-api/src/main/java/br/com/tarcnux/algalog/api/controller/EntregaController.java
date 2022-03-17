@@ -1,4 +1,4 @@
-package br.com.tarcnux.algalog.controller;
+package br.com.tarcnux.algalog.api.controller;
 
 import java.util.List;
 
@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.tarcnux.algalog.api.model.EntregaModel;
 import br.com.tarcnux.algalog.domain.model.Entrega;
 import br.com.tarcnux.algalog.domain.repository.EntregaRepository;
 import br.com.tarcnux.algalog.domain.service.SolicitacaoEntregaService;
@@ -40,9 +41,9 @@ public class EntregaController {
 	}
 	
 	@GetMapping("/{entregaId}")
-	public ResponseEntity<Entrega> buscar(@PathVariable Long entregaId) {
+	public ResponseEntity<EntregaModel> buscar(@PathVariable Long entregaId) {
 		return entregaRepository.findById(entregaId)
-				.map(ResponseEntity::ok)
+				.map(entrega -> ResponseEntity.ok(new EntregaModel(entrega)))
 				.orElse(ResponseEntity.notFound().build());
 	}
 }
