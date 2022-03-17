@@ -7,11 +7,9 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.tarcnux.algalog.domain.exception.NegocioException;
 import br.com.tarcnux.algalog.domain.model.Cliente;
 import br.com.tarcnux.algalog.domain.model.Entrega;
 import br.com.tarcnux.algalog.domain.model.StatusEntrega;
-import br.com.tarcnux.algalog.domain.repository.ClienteRepository;
 import br.com.tarcnux.algalog.domain.repository.EntregaRepository;
 
 @Service

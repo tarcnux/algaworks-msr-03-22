@@ -171,6 +171,45 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Entregas - Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entregas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Entregas - Buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entregas/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas",
+								"100"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
