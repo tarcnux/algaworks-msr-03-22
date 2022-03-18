@@ -37,7 +37,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nome\": \"Cliente com o mesmo e-mail\",\n    \"email\": \"davi@gmail.com\",\n    \"telefone\": \"(47) 5588-5555\"\n}",
+							"raw": "{\n    \"nome\": \"Cliente com outro e-mail\",\n    \"email\": \"davi123@gmail.com\",\n    \"telefone\": \"(47) 5588-5555\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -151,7 +151,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cliente\": {\n        \"id\": 2\n    },\n    \"destinatario\": {\n        \"nome\": \"Maria da Silva\",\n        \"logradouro\": \"Rua das Goiabeiras\",\n        \"numero\": \"100\",\n        \"complemento\": \"Casa Azul\",\n        \"bairro\": \"centro\",\n        \"dataFinalizacao\": \"2022-03-17T23:09:09\"\n    },\n    \"taxa\": 100.50\n}",
+							"raw": "{\n    \"cliente\": {\n        \"id\": 3\n    },\n    \"destinatario\": {\n        \"nome\": \"Maria da Silva\",\n        \"logradouro\": \"Rua das Goiabeiras\",\n        \"numero\": \"100\",\n        \"complemento\": \"Casa Azul\",\n        \"bairro\": \"centro\",\n        \"dataFinalizacao\": \"2022-03-17T23:09:09\"\n    },\n    \"taxa\": 100.50\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -197,7 +197,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/entregas/100",
+							"raw": "http://localhost:8080/entregas/9",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -205,7 +205,7 @@
 							"port": "8080",
 							"path": [
 								"entregas",
-								"100"
+								"9"
 							]
 						}
 					},

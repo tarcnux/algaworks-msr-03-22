@@ -9,37 +9,25 @@ import br.com.tarcnux.algalog.domain.model.StatusEntrega;
 public class EntregaModel {
 	
 	private Long id;
-	private String nomeCliente;
+	private ClienteResumoModel cliente;
 	private DestinatarioModel destinatario;
-	private BigDecimal frete;
+	private BigDecimal taxa;
 	private StatusEntrega status;
 	private OffsetDateTime dataPedido;
 	private OffsetDateTime dataFinalizacao;
+		
 	
-	
-	public EntregaModel() {}
-	
-	public EntregaModel(Entrega entrega) {		
-		this.id = entrega.getId();
-		this.nomeCliente = entrega.getCliente().getNome();
-		this.destinatario = new DestinatarioModel(entrega.getDestinatario());	
-		this.frete = entrega.getTaxa();
-		this.status = entrega.getStatus();
-		this.dataPedido = entrega.getDataPedido();
-		this.dataFinalizacao = entrega.getDataFinalizacao();
+	public ClienteResumoModel getCliente() {
+		return cliente;
 	}
-	
+	public void setCliente(ClienteResumoModel cliente) {
+		this.cliente = cliente;
+	}
 	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
 		this.id = id;
-	}
-	public String getNomeCliente() {
-		return nomeCliente;
-	}
-	public void setNomeCliente(String nomeCliente) {
-		this.nomeCliente = nomeCliente;
 	}
 	public DestinatarioModel getDestinatario() {
 		return destinatario;
@@ -47,11 +35,11 @@ public class EntregaModel {
 	public void setDestinatario(DestinatarioModel destinatario) {
 		this.destinatario = destinatario;
 	}
-	public BigDecimal getFrete() {
-		return frete;
+	public BigDecimal getTaxa() {
+		return taxa;
 	}
-	public void setFrete(BigDecimal taxa) {
-		this.frete = taxa;
+	public void setTaxa(BigDecimal taxa) {
+		this.taxa = taxa;
 	}
 	public StatusEntrega getStatus() {
 		return status;
