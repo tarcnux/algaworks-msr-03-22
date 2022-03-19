@@ -151,7 +151,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cliente\": {\n        \"id\": 3\n    },\n    \"destinatario\": {\n        \"nome\": \"Maria da Silva\",\n        \"logradouro\": \"Rua das Goiabeiras\",\n        \"numero\": \"100\",\n        \"complemento\": \"Casa Azul\",\n        \"bairro\": \"centro\",\n        \"dataFinalizacao\": \"2022-03-17T23:09:09\"\n    },\n    \"taxa\": 100.50\n}",
+							"raw": "{\n    \"cliente\": {\n        \"id\": 7\n    },\n    \"destinatario\": {\n        \"nome\": \"Novo destinatário\",\n        \"logradouro\": \"Rua das Goiabeiras\",\n        \"numero\": \"100\",\n        \"complemento\": \"Casa Azul\",\n        \"bairro\": \"centro\"        \n    },\n    \"taxa\": 10.45\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -206,6 +206,62 @@
 							"path": [
 								"entregas",
 								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ocorrências",
+			"item": [
+				{
+					"name": "Ocorrências - Registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"descricao\" : \"Tentativa 2 sem sucesso (não estava em casa)\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/entregas/1/ocorrencias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas",
+								"1",
+								"ocorrencias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ocorrências - LIstar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entregas/2/ocorrencias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas",
+								"2",
+								"ocorrencias"
 							]
 						}
 					},
