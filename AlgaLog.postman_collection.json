@@ -210,6 +210,27 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Entregas - Finalizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entregas/1/finalizacao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entregas",
+								"1",
+								"finalizacao"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
